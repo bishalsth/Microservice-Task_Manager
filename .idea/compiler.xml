@@ -8,12 +8,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="task-user-service" />
         <module name="TASK-SUBMISSION-SERVICE" />
+        <module name="Eureka-Server" />
+        <module name="API-GATEWAY" />
         <module name="Task-Service" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="API-GATEWAY" options="-parameters" />
+      <module name="Eureka-Server" options="-parameters" />
       <module name="TASK-SUBMISSION-SERVICE" options="-parameters" />
       <module name="Task-Service" options="-parameters" />
       <module name="task-user-service" options="-parameters" />
